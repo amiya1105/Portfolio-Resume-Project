@@ -1,0 +1,26 @@
+{% load static %}
+  <div class="border-right border-warning h-100">
+    <div class=" text-center">
+      <img src="{% static 'core/images/pic.jpg'%}" alt="profilepic" class="image-fluid rounded-circle mt-5" width="100px" height="100px">
+      <h3 class="text-white mt-3 st-font">Amiya Kumar Dash <br>
+      <h4  class="text-warning">(Full stack developer)</h4>
+    <h5 class="text-info">  Python | Django | JavaScript</h5>
+      </h3>
+
+    </div>
+
+         <hr class="border-light">
+    <nav class="nav flex-column text-center">
+      <!-- <a href="/ " class="nav-link">Home</a> -->
+
+      <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+      <!-- <a href="/serv/services/ " class="nav-link">Services</a> -->
+      <a href="{% url 'services' %} " class="nav-link {{services}}">Services</a>
+      <!-- <a href="/edu/skill/ " class="nav-link">Skill</a> -->
+      <a href="{% url 'skill' %} " class="nav-link {{skill}}">Skill</a>
+      <!-- <a href=" /contact/" class="nav-link">Contact</a> -->
+      <a href=" {% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
+      <a href=" {% url 'contactus' %}" class="nav-link {{contactus}}">Contactus</a>
+
+    </nav>
+  </div>
